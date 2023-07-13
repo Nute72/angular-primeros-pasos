@@ -1,0 +1,101 @@
+@import "palette.scss";
+
+.color-primary{ color: $color-primary; }
+.color-secondary{ color: $color-secondary; }
+.color-text{ color: $color-text; }
+
+.bg-primary{ color: $color-primary; }
+.bg-secondary{ color: $color-secondary; }
+.bg-text{ color: $color-text; }
+
+body{
+	padding: 0;
+	margin: 0;
+
+}
+form{
+	max-width: 30em;
+	margin: 4em auto;
+	position: relative;
+    background: $color-form;
+    padding: 2em 3em;
+    overflow: hidden;
+}
+form h1{
+    font-family: "Raleway";
+    color:$color-primary; 
+}
+form input[type=text]::placeholder{
+   font-family: "Raleway";
+   color:$color-secondary; 
+}
+form .data{
+    margin-top: 1em;
+}
+form .data li{
+ background: $color-white;
+ border-left: 4px solid $color-primary;
+ padding: .5em;
+ margin: 1em auto;
+ color: $color-secondary;
+ font-family: "Raleway";
+}
+form .data li i{
+    float: right;
+    color: $color-terciary;
+    cursor: pointer;
+}
+form .input-group-text{
+    background: $color-primary;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    padding: 1em 23px;
+    color: $color-white;
+    position: absolute;
+    right: 13px;
+    top: 68px;
+    cursor: pointer;
+}
+form .input-group-text i{
+    font-size: 2em;
+}
+form .form-control{
+	height: 3em;
+    font-family: "Raleway";
+}
+form .form-control:focus{
+	box-shadow: 0;
+}
+
+
+.title{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: $color-primary;
+}
+.parrafo{
+    width: 50%;
+    height: 2rem;
+    background-color: $color-green;
+}
+.container{
+    &-md{
+        width: 50%;
+    }
+}
+
+h1{
+    font-family: "Raleway";
+    color:$color-primary; 
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    border: 2px solid $color-green;
+    text-align: center;
+}
+
+h3{
+    font-family: "Raleway";
+    color:$color-green; 
+    font-size: 2.2rem;
+}

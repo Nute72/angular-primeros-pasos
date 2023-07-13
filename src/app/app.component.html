@@ -1,0 +1,17 @@
+<div class="container container-md">
+	<h1>Peliculas en Angular 2</h1>
+	<h3>Primera pelicula harcodeada:</h3>
+	<p>Pelicula: {{peliculas[0]["pelicula"]}}</p>
+	<p>Director: {{peliculas[0]["director"]}}</p>
+	<p>Año: {{peliculas[0]["anio"]}}</p>
+
+	<h3>Listado de peliculas:</h3>
+	<!-- Utilizamos ngFor para recorrer el array -->
+	<ul>
+		<li *ngFor="let peli of peliculas">
+			<p>Titulo: {{peli["pelicula"]}}</p>
+			<p>Director: {{peli["director"]}}</p>
+			<p>Año: {{peli["anio"]}}</p>
+		</li>
+	</ul>
+</div>
